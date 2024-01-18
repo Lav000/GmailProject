@@ -56,30 +56,29 @@
                 immédiatement les nouveaux messages et choisissez<br>
                 ceux que vous souhaitez lire en priorité.
             </p>
-            <form action="" method="POST">
+            <form action="" method="post">
                 <fieldset>
                     <legend>Créer un compte</legend>
                     <div class="field">
-                        <label for="name">Nom*</label><br>
-                        <input type="text" name="name" required>
+                        <label for="nom_utilisateur">Nom*</label><br>
+                        <input type="text" id="firstname" name="nom_utilisateur" placeholder="Votre nom" required pattern="[a-zA-Z]+" maxlength="30">
                     </div>
                     <div class="field">
                         <label for="firstname">Prénom*</label><br>
-                        <input type="text" name="firstname"  required>
+                        <input type="text" id="lastname" name="nom_utilisateur" placeholder="Votre prenom" required pattern="[a-zA-Z]+" maxlength="30">
                     </div>
                     <div class="field">
-                        <label for="mail">Mail*</label><br>
-                        <input type="text" name="mail"  required>
+                        <label for="email">Mail*</label><br>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
                     </div >
                     <div class="field">
                         <label for="password">Choisir votre mot de passe*</label><br>
-                        <input type="password" name="password"  required>
+                        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     </div>
                     <div id="btnvaccount">
-                        <input type="button" value="valider votre compte">
+                        <input type="submit" value="valider votre compte">
                     </div>                    
                 </fieldset>
-
             </form>
         </section>
         <section class="connection">
@@ -91,7 +90,7 @@
                 </div>
                 <div>
                     <label for="password">Mot de passe*</label>
-                    <input type="text" name="password" required>
+                    <input type="password" name="accountpassword" required>
                 </div>
                 <div>
                     <input type="submit" value="connexion">
