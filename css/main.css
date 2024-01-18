@@ -1,6 +1,6 @@
  /* ACCUEIL SECTION */
  .accueilpage{
-    background-image: url('asset/home-hero.jpg');
+    background-image: url('..asset/home-hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
