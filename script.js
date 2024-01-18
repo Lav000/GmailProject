@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/* document.addEventListener("DOMContentLoaded", function() {
 
     //affiche ou non la page de connexion
     function PageChanger() {
@@ -15,4 +15,4 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       document.getElementsByClassName('PageChanger').addEventListener('click', PageChanger);
-});
+}); */

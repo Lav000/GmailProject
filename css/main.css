@@ -7,6 +7,7 @@
     height: 100vh;
     min-height: 50rem;
     margin: 0;
+    margin-top: -2vh;
     overflow: hidden;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -36,7 +37,7 @@
 
 /* ACCOUNT SECTION */
 .createaccount{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,12 +114,9 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
 }
-.connection form{
-    margin-top: 6vh;
-}
 .connection h3{
     font-family: 'Open Sans', sans-serif;
-    margin: 6vh 0vh 6vh 0vh;
+    margin: 8vh 0vh 6vh 0vh;
     font-size: 2vw;
     line-height: 130%;
     letter-spacing: 0.1rem;
@@ -161,10 +159,10 @@
 }
 
 /* Page Changer */
-.createaccount, .connection{
+/* .createaccount, .connection{
     display: none;
 }
 
 .visible{
 display: flex;
-}
+} */
