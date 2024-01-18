@@ -159,3 +159,12 @@
     padding: 1vh 4vh 1vh 4vh;
     cursor: pointer;
 }
+
+/* Page Changer */
+.createaccount, .connection{
+    display: none;
+}
+
+.visible{
+display: flex;
+}
