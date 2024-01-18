@@ -18,17 +18,26 @@ header div{
     font-size: 1.6rem;
 }
 header div img{
-    width: 5vh;
+    width: 4.5vh;
     height: auto;
-    margin: 1rem;
+    margin: 0rem 1rem 0rem 1.3rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
 /* Nav */
 header ul{
     display: flex;
+    padding: 0;
 }
 header ul li{
-    padding: 1.5vh;
+    padding: 2.5vh;
     text-transform: uppercase;
     cursor: pointer;
+}
+header ul li a{
+    padding: auto;
+}
+#cc{
+    background-color: #D5463B;
+    color: #fff;
 }
