@@ -84,17 +84,20 @@
         <section class="connection">
             <h3>Bienvenue dans votre espace</h3>
             <form action="" method="get">
-                <div>
-                    <label for="mail login">Mail ou login*</label>
-                    <input type="text" name="mail" required>
-                </div>
-                <div>
-                    <label for="password">Mot de passe*</label>
-                    <input type="password" name="accountpassword" required>
-                </div>
-                <div>
-                    <input type="submit" value="connexion">
-                </div>
+                <fieldset>
+                    <legend>Connectez-vous à votre compte</legend>
+                    <div class="field">
+                        <label for="email">Mail*</label><br>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div >
+                    <div class="field">
+                        <label for="password">Choisir votre mot de passe*</label><br>
+                        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </div>
+                    <div id="btnvaccount">
+                        <input type="submit" class="btnsubmit" value="valider votre compte">
+                    </div>                    
+                </fieldset>
             </form>
         </section>
     </body>
