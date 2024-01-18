@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-<main>
+<body>
     <header>
         <div>
             <img 
@@ -35,61 +35,59 @@
             </li>
         </ul>
     </header>
-    <body>
-        <div>
-            <a id="btntop" href="index.html">
-                <img 
-                    src="asset/arrow.png"
-                    alt="flèche pour monter en haut de page"
-                >
-            </a>
-            <section class="accueilpage">
-                <h1>
-                    Retrouvez la fluidité et la <br>
-                    simplicité de Gmail sur <br>
-                    tous vos appareil<br>
-                </h1>
-                <div>
-                    <a href="#1" id="btncreateaccount" class="PageChanger">créer un compte</a>
-                </div>
-            </section>
-            <section class="createaccount visible" id="1">
-                <h2>
-                    Une boîte de réception<br>
-                    entièrement repensée
-                </h2>
-                <p>
-                    Avec les nouveaux onglets personnalisables, repérez<br>
-                    immédiatement les nouveaux messages et choisissez<br>
-                    ceux que vous souhaitez lire en priorité.
-                </p>
-                <form action="" method="post">
-                    <fieldset>
-                        <legend>Créer un compte</legend>
-                        <div class="field">
-                            <label for="nom_utilisateur">Nom*</label><br>
-                            <input type="text" id="firstname" name="nom_utilisateur" placeholder="Votre nom" required pattern="[a-zA-Z]+" maxlength="30">
-                        </div>
-                        <div class="field">
-                            <label for="firstname">Prénom*</label><br>
-                            <input type="text" id="lastname" name="nom_utilisateur" placeholder="Votre prenom" required pattern="[a-zA-Z]+" maxlength="30">
-                        </div>
-                        <div class="field">
-                            <label for="email">Mail*</label><br>
-                            <input type="email" id="email" name="email" placeholder="Votre email" required>
-                        </div >
-                        <div class="field">
-                            <label for="password">Choisir votre mot de passe*</label><br>
-                            <input type="password" id="password" name="password" placeholder="Votre mot de passe" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                        </div>
-                        <div id="btnvaccount">
-                            <input type="submit" class="btnsubmit" value="valider votre compte">
-                        </div>                    
-                    </fieldset>
-                </form>
-            </section>
-        </div>
-    </body>
+    <main>
+        <a id="btntop" href="index.html">
+            <img 
+                src="asset/arrow.png"
+                alt="flèche pour monter en haut de page"
+            >
+        </a>
+        <section class="accueilpage">
+            <h1>
+                Retrouvez la fluidité et la <br>
+                simplicité de Gmail sur <br>
+                tous vos appareil<br>
+            </h1>
+            <div>
+                <a href="#1" id="btncreateaccount" class="PageChanger">créer un compte</a>
+            </div>
+        </section>
+        <section class="createaccount visible" id="1">
+            <h2>
+                Une boîte de réception<br>
+                entièrement repensée
+            </h2>
+            <p>
+                Avec les nouveaux onglets personnalisables, repérez<br>
+                immédiatement les nouveaux messages et choisissez<br>
+                ceux que vous souhaitez lire en priorité.
+            </p>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Créer un compte</legend>
+                    <div class="field">
+                        <label for="lastname">Nom*</label><br>
+                        <input type="text" id="lastname" name="nom_utilisateur" placeholder="Votre nom" required pattern="[a-zA-Z]+" maxlength="30">
+                    </div>
+                    <div class="field">
+                        <label for="firstname">Prénom*</label><br>
+                        <input type="text" id="firstname" name="prenom_utilisateur" placeholder="Votre prenom" required pattern="[a-zA-Z]+" maxlength="30">
+                    </div>
+                    <div class="field">
+                        <label for="email">Mail*</label><br>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div >
+                    <div class="field">
+                        <label for="password">Choisir votre mot de passe*</label><br>
+                        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </div>
+                    <div id="btnvaccount">
+                        <input type="submit" class="btnsubmit" value="valider votre compte">
+                    </div>                    
+                </fieldset>
+            </form>
+        </section>
+    </main>
     <footer>
     </footer>
-</main>
+</body>
