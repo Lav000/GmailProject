@@ -76,19 +76,29 @@
 }
 #firstname, #lastname, #email, #password {
     margin-top: 0.3rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 44.5vh;
     border-radius: 0px;
     border-width: 0px;
     background-color: rgba(230, 230, 230, 0.531);
     font-family: 'Open Sans', sans-serif;
-    display: flex;
 }
 .createaccount form fieldset .field input::placeholder {
-    line-height: 4rem; /* Ajustez la valeur selon vos besoins */
+    padding-left: 0.2rem;
 }
 .createaccount form fieldset #btnvaccount{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.btnsubmit{
+    color: #fff;
+    background-color: #1A73E8;
+    border-radius: 0px;
+    border-width: 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 1vh 4vh 1vh 4vh;
+    cursor: pointer;
 }
