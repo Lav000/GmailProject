@@ -41,3 +41,8 @@ header ul li a{
     background-color: #D5463B;
     color: #fff;
 }
+
+/* Arrow to top */
+#btntop {
+    display: flex;
+}
