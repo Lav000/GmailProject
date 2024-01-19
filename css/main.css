@@ -158,6 +158,11 @@
     cursor: pointer;
 }
 
+/* Arrow remonte page */
+#arrow{
+    position: absolute;
+    margin: auto;
+}
 /* Page Changer */
 /* .createaccount, .connection{
     display: none;
