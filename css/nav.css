@@ -17,6 +17,9 @@ header div{
     align-items: center;
     font-size: 1.6rem;
 }
+header div h1{
+    color: rgb(121, 121, 121);
+}
 header div img{
     width: 4.5vh;
     height: auto;
