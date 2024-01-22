@@ -159,15 +159,16 @@
 }
 
 /* Arrow remonte page */
-#arrow{
-    position: absolute;
-    margin: auto;
+#arrow {
+    position: fixed;
+    margin: 91vh 0vh 0vh 94vw;
+    padding: 0.6rem;
+    background-color: #D5463B;
+    border-radius: 50%;
+    text-align: center;
 }
-/* Page Changer */
-/* .createaccount, .connection{
-    display: none;
+#arrow a{
+    display: block;
+    height: 100%;
+    width: 102%;
 }
-
-.visible{
-display: flex;
-} */
