@@ -16,6 +16,7 @@ time, mark, audio, video {
   font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
+  scroll-behavior: smooth;
 }
 input{
   padding: O;
