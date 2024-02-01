@@ -23,6 +23,9 @@ header div img{
     margin: 0rem 1rem 0rem 1.3rem;
     padding: 0.5rem 0rem 0.5rem 0rem;
 }
+header div h1{
+    color: rgb(121, 121, 121);
+}
 
 /* Nav */
 header ul{
@@ -33,6 +36,7 @@ header ul li{
     padding: 2.5vh;
     text-transform: uppercase;
     cursor: pointer;
+    font-size: 1rem;
 }
 header ul li a{
     padding: auto;
