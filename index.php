@@ -1,3 +1,9 @@
+<?php
+
+    session_start();
+
+    include_once __DIR__ ."/controller/config.inc.php";
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <!-- HEAD -->
