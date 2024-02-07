@@ -158,6 +158,30 @@
     cursor: pointer;
 }
 
+/*FORM TEST */
+ .form-action{
+     max-width: 80rem;
+     padding-top: 10rem;
+ }
+
+ .form-action .warning{
+     padding: 1rem;
+     line-height: 2.5rem;
+     text-align: center;
+     border-radius: .4rem;
+ }
+ .form-action .msg-success{
+     background: #079992;
+     color: #fff;
+ }
+ .form-action .msg-alert{
+     background: #b71540;
+     color: #fff;
+ }
+ .warning-connection{
+     text-align: center;
+     color: rgb(6, 88, 23);
+ }
 /* Arrow remonte page */
 #arrow {
     position: fixed;

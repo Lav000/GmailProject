@@ -32,9 +32,9 @@
             immédiatement les nouveaux messages et choisissez<br>
             ceux que vous souhaitez lire en priorité.
         </p>
-        /* INCLUDE FORMULAIRE */
+        <!-- FORM -->
         <?php
-            include_once __DIR__. './form.inc.php'
+            include_once __DIR__ .'/form.inc.php';
         ?>
     </section>
 </main>

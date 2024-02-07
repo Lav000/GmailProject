@@ -17,7 +17,7 @@
         ?>
         <!-- MAIN -->
         <?php
-            include_once __DIR__. 'include/main.inc.php'
+            include_once __DIR__. '/include/main.inc.php'
         ?>
     </body>
 </html>
