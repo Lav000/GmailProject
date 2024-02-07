@@ -3,7 +3,7 @@
     $token = bin2hex(random_bytes(32));
     $_SESSION['csrf_token'] = $token;
 ?>
-<form action="" method="post">
+<form action="../form-treatment.php" method="post">
     <fieldset>
         <legend>Créer un compte</legend>
         <div class="field">
