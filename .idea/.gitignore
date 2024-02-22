@@ -7,6 +7,6 @@
 /dataSources/
 /dataSources.local.xml
 #personnal
-index.php
-include
-script.js
+../index.php
+../include
+../script.js
