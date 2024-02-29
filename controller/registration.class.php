@@ -1,13 +1,10 @@
 <?php
-
 class registration{
     static function user_registed()
     {
         //Verification que le token est bien le même que celui de session et que tous les champs sont remplis.
         if(isset($_POST['csrf_token']) &&
-            isset($_POST['nom_utilisateur']) &&
-            isset($_POST['prenom_utilisateur']) &&
-            isset($_POST['email']) &&
+            isset($_SESSION['csrf_token']) &&
             $_POST['csrf_token'] === $_SESSION['csrf_token'])
         {
             //Enregistrement du formuaire dans les variables avec la fonction strip_tags pour éviter les push xss

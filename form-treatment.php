@@ -1,9 +1,5 @@
 <?php
-    session_start();
-    //Genere un token CSRF puis le stock dans la session
-    $token = bin2hex(random_bytes(32));
-    $_SESSION['csrf_token'] = $token;
-
+session_start();
     include_once __DIR__ ."/include/head.inc.php";
 ?>
 <body>
