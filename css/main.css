@@ -20,6 +20,7 @@
     line-height: 150%;
     letter-spacing: 0.1rem;
     font-size: 2.7vw;
+    font-weight: 200;
 }
 
 /* Button create account */
@@ -117,7 +118,7 @@
 }
 .connection h3{
     font-family: 'Open Sans', sans-serif;
-    margin: 8vh 0vh 6vh 0vh;
+    margin: 11vh 0vh 6vh 0vh;
     font-size: 2vw;
     line-height: 130%;
     letter-spacing: 0.1rem;

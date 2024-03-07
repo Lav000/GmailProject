@@ -15,7 +15,6 @@ header {
 header div{
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
 }
 header div img{
     width: 4.5vh;
@@ -25,18 +24,21 @@ header div img{
 }
 header div h1{
     color: rgb(121, 121, 121);
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 /* Nav */
 header ul{
     display: flex;
     padding: 0;
+    margin: 0;
 }
 header ul li{
     padding: 2.5vh;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 header ul li a{
     padding: auto;
