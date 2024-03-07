@@ -45,7 +45,7 @@
     </div>
     <section class="connection" id="2">
         <h3>Bienvenue dans votre espace</h3>
-        <form action="" method="get">
+        <form method="post">
             <fieldset>
                 <legend>Connectez-vous à votre compte</legend>
                 <div class="field">
@@ -61,6 +61,9 @@
                 </div>
             </fieldset>
         </form>
+        <?php
+        include_once "controller/ConnectionUser.php";
+        ?>
     </section>
 </main>
 <footer>

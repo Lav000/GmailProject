@@ -59,7 +59,9 @@ class CreateUser {
                 // Fermer la connexion
                 $connexion = null;
             }
-        } catch (PDOException $e) {
+        }
+
+        catch (PDOException $e) {
             echo '<p class="warning msg-alert">Erreur de connexion à la base de données : </p>' . $e->getMessage();
         }
     }
