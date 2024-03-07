@@ -1,9 +1,9 @@
 <?php
-
-
 class CreateUser {
 
+
     static function insertUser() {
+        include_once "registration.class.php";
 
         //DataBase settings
         $server = "localhost";
@@ -19,14 +19,14 @@ class CreateUser {
             // Vérifier si le formulaire a été soumis
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-                $lastName = $_POST["nom_utilisateur"];
-                $firstName = $_POST["prenom_utilisateur"];
-                $email = $_POST["email"];
-                $password = $_POST["password"];
+                $lastName = strip_tags($_POST["nom_utilisateur"]);
+                $firstName = strip_tags($_POST["prenom_utilisateur"]);
+                $email = strip_tags($_POST["email"]);
+                $password = strip_tags($_POST["password"]);
 
                 // Verification de l'existance du user
-                $requeteVerif = $connexion->prepare("SELECT id FROM utilisateurs WHERE login = ?");
-                $requeteVerif->bindParam(1, $login);
+                $requeteVerif = $connexion->prepare("SELECT id FROM utilisateurs WHERE email = ?");
+                $requeteVerif->bindParam(1, $email);
                 $requeteVerif->execute();
 
                 if ($requeteVerif->rowCount() > 0) {
@@ -34,8 +34,8 @@ class CreateUser {
                 }
                 else
                 {
-                    if (!empty($lastName) && !empty($firstName) && !empty($motDePasse) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                        $motDePasseHash = password_hash($password, PASSWORD_DEFAULT);
+                    if (!empty($lastName) && !empty($firstName) && !empty($password) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
                         // Requet envoyé à la bdd
                         $requete = $connexion->prepare("INSERT INTO utilisateurs (Nom, Prenom, email , mot_de_passe) VALUES (?, ?, ?, ?)");
@@ -44,9 +44,10 @@ class CreateUser {
                         $requete->bindParam(1, $lastName);
                         $requete->bindParam(2, $firstName);
                         $requete->bindParam(3, $email);
-                        $requete->bindParam(4, $motDePasseHash);
+                        $requete->bindParam(4, $passwordHash);
 
                         $requete->execute();
+
 
                         print '<p class="warning msg-success">Bravo '.$firstName.' : Enregistrement réussi !</p>';
 

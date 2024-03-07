@@ -13,7 +13,7 @@
             <a href="">pour les pro</a>
         </li>
         <li id="c">
-            <a href="./connection.html" class="PageChanger">connexion</a>
+            <a href="./connection.php" class="PageChanger">connexion</a>
         </li>
         <li id="cc" class="PageChanger">
             <a href="#1">créer un compte</a>

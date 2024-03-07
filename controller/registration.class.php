@@ -10,17 +10,16 @@ class registration{
             //Enregistrement du formuaire dans les variables avec la fonction strip_tags pour éviter les push xss
             $_firstname = strip_tags($_POST['prenom_utilisateur']);
             $_lastname = strip_tags($_POST['nom_utilisateur']);
-            $_login = strip_tags($_POST['email']);
+            $_email = strip_tags($_POST['email']);
             $_pass = $_POST['password'];
 
-            //Expression régulière pour obliger l'utilisateur à mettre un mot de passe plus robuste
-            $regex = '/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/';
-
-            //Test de la bonne saisie du mdp
-            $_login && $_pass && preg_match($regex, $_pass)? print "Bonjour ".$_firstname.", votre inscription est validée 🔐" :
-                print "Erreur de saisie, veuilez recommencer. <a href=\"index.php\">Essayer encore</a>";
-
-            print "<br>Connexion sécurisé 🔒️";
+            //Verification des champs saisies:
+            if(empty($_firstname) && empty($_lastname) && empty($_email) && empty($_pass)){
+                print "Veuillez saisir un Nom, Prénom et email.";
+            }
+            else{
+                print "Bonjour ".$_firstname.", votre inscription est validée 🔐";
+            }
 
             //Supprime le jeton après utilisation
             unset($_SESSION['csrf_token']);

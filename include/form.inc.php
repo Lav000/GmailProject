@@ -2,8 +2,9 @@
     //Genere un token CSRF puis le stock dans la session
     $token = bin2hex(random_bytes(32));
     $_SESSION['csrf_token'] = $token;
+    include_once "controller/CreateUser.php";
 ?>
-<form action="form-treatment.php" method="post">
+<form method="post">
     <fieldset>
         <legend>Créer un compte</legend>
         <div class="field">
