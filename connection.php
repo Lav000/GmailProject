@@ -63,7 +63,7 @@
         </form>
         <?php
         include_once "controller/ConnectionUser.php";
-        ?>
+        ?> 
     </section>
 </main>
 <footer>
