@@ -1,4 +1,4 @@
-# Gmail Project
+# [Gmail Project](https://lav000.github.io/GmailProject/)
 
 ## About
 🇫🇷 Le projet Gmail est un projet scolaire qui a pour but de reproduire l'interface gmail de façon static et dynamique. Cette interface est relier a une bdd et permet de créer un compte et d'être autentifier grâce au compte crée. Elle réspect certaine norme de securité comme l'utilisation d'un token, le cryptage du mot de passe ainsi que la protéction du code des attack xss.
@@ -18,7 +18,7 @@ If you are a total beginner to this, start here!
 > Read more about Xampp [here](https://www.apachefriends.org/fr/index.html)
 
 ## Navigation
-**The site consists of two pages. The main page, or "Créer un compte" page, contains the home page and the account creation form:**   
+**The site consists of two pages. [link to the static page](https://lav000.github.io/GmailProject/). The main page, or "Créer un compte" page, contains the home page and the account creation form:**   
 
 ![Accueil Page](asset/md/Gmail.jpeg)
 
