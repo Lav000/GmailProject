@@ -18,7 +18,7 @@ If you are a total beginner to this, start here!
 > Read more about Xampp [here](https://www.apachefriends.org/fr/index.html)
 
 ## Navigation
-**The site consists of two pages. [link to the static page](https://lav000.github.io/GmailProject/). The main page, or "Créer un compte" page, contains the home page and the account creation form:**   
+**The site consists of two pages available [here](https://lav000.github.io/GmailProject/). The main page, or "Créer un compte" page, contains the home page and the account creation form:**   
 
 ![Accueil Page](asset/md/Gmail.jpeg)
 
