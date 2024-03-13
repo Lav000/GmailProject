@@ -29,7 +29,7 @@ If you are a total beginner to this, start here!
 
 **The account creation form can be found under the home page:**
 
-![Create account formular](asset/md/GmailFormular1.jpeg)
+![Create account formular](asset/md/gmailFormular1.jpeg)
 
 **The second page, "Connexion", contains the login form:**
 
@@ -38,9 +38,9 @@ If you are a total beginner to this, start here!
 
 ## Appendix and FAQ
 
-:::info
-**Find this document incomplete?** Leave a comment!
-:::
+
+> **Find this document incomplete?** Leave a comment!
+
 
 ###### tags: `Documentation` `Education`
 
