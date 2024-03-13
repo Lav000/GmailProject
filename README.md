@@ -1,9 +1,4 @@
----
-title: 'Gmail Projet'
-disqus: Valentin THOMAS
----
-Gmail Project
-===
+# Gmail Project
 
 ## About
 🇫🇷 Le projet Gmail est un projet scolaire qui a pour but de reproduire l'interface gmail de façon static et dynamique. Cette interface est relier a une bdd et permet de créer un compte et d'être autentifier grâce au compte crée. Elle réspect certaine norme de securité comme l'utilisation d'un token, le cryptage du mot de passe ainsi que la protéction du code des attack xss.
